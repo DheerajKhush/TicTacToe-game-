@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="#FFFFC107"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit Game?"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/yesbutton"
+                android:layout_width="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:onClick="exitApp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/nobutton"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:onClick="rtrnLastAct">
+
+            </Button>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="sound">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
